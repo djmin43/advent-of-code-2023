@@ -2,25 +2,44 @@ package org.example.day1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Day1 {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         ArrayList<String> inputList = readInput();
         partOne(inputList);
+        partTwo(inputList);
     }
 
     private static void partTwo(ArrayList<String> inputList) {
+        ArrayList<String> numberList = getNumberList();
         for (int i = 0; i < inputList.size(); i++) {
             String code = inputList.get(i);
-            ArrayList<Character> charList = new ArrayList<>();
+            for (int j = 0; j < numberList.size(); j++) {
 
+                System.out.println("numberList = " + numberList.get(j) + Integer.toString(j + 1));
+                code.replaceAll(numberList.get(j), Integer.toString(j + 1));
+                System.out.println("code = " + code);
+            }
         }
+    }
 
+    private static ArrayList<String> getNumberList() {
+        ArrayList<String> numberList = new ArrayList<>();
+        numberList.add("one");
+        numberList.add("two");
+        numberList.add("three");
+        numberList.add("four");
+        numberList.add("five");
+        numberList.add("six");
+        numberList.add("seven");
+        numberList.add("eight");
+        numberList.add("nine");
+        return numberList;
 
     }
 
@@ -43,16 +62,17 @@ public class Day1 {
 
     }
 
-    private static ArrayList<String> readInput() throws FileNotFoundException {
+    private static ArrayList<String> readInput() {
         File day1Input = new File("./day1-input.txt");
-        Scanner reader = new Scanner(day1Input);
         ArrayList<String> inputList = new ArrayList<>();
-        while (reader.hasNextLine()) {
-            inputList.add(reader.nextLine());
+        try {
+            Scanner reader = new Scanner(day1Input);
+            while (reader.hasNextLine()) {
+                inputList.add(reader.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println(e);
         }
         return inputList;
     }
-
-
-
 }
