@@ -1,6 +1,16 @@
 
-i
-java:S3973"GUse indentation to denote the code conditionally executed by this "if".(œìÌ¶ÿÿÿÿÿ8òÃ¡Ã1
 g
-java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8³–Ï¡Ã1
-L	java:S106""+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8äĞ¡Ã1
+java:S20950"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8—÷…¢Ã1
+^
+java:S1854"<Remove this useless assignment to local variable "charList".(ÆÙ¬ëøÿÿÿÿ8™÷…¢Ã1
+U
+java:S1854"8Remove this useless assignment to local variable "code".(ÍöÇÌ8™÷…¢Ã1
+F
+java:S1481")Remove this unused "code" local variable.(ÍöÇÌ8›÷…¢Ã1
+O
+java:S1481"-Remove this unused "charList" local variable.(ÆÙ¬ëøÿÿÿÿ8›÷…¢Ã1
+L	java:S106*"+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8÷…¢Ã1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8¡÷…¢Ã1
+N
+java:S1144",Remove this unused private "partTwo" method.(á¡êìÿÿÿÿÿ8¡÷…¢Ã1
