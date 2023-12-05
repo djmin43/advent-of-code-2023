@@ -1,13 +1,6 @@
 
 g
-java:S2095E"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8÷Ëë¦Ã1
-L	java:S106"+Replace this use of System.out by a logger.(Á¨²¤øÿÿÿÿ8ÿËë¦Ã1
-J
-java:S2201".The return value of "replaceAll" must be used.(èüûk8¡¼õ¦Ã1
-G	java:S106"+Replace this use of System.out by a logger.(ô‹Ë¼8°ì¦Ã1
-L	java:S106="+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8”çñ¦Ã1
-L	java:S106J"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8Üáò¦Ã1
-P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ÿËë¦Ã1
-L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ÿËë¦Ã1
+java:S2095X"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8’õÔÏÃ1
+L	java:S106/"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8šõÔÏÃ1
+L	java:S106P"+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8¤¿ÛÏÃ1
+L	java:S106]"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8æİÏÃ1

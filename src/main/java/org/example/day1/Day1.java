@@ -3,8 +3,6 @@ package org.example.day1;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Day1 {
@@ -16,16 +14,37 @@ public class Day1 {
     }
 
     private static void partTwo(ArrayList<String> inputList) {
+
+        int sum = 0;
         ArrayList<String> numberList = getNumberList();
         for (int i = 0; i < inputList.size(); i++) {
             String code = inputList.get(i);
+            String leadingCode = code;
+            String endingCode = code;
+            String firstDigit = "";
+            String lastDigit = "";
             for (int j = 0; j < numberList.size(); j++) {
-
-                System.out.println("numberList = " + numberList.get(j) + Integer.toString(j + 1));
-                code.replaceAll(numberList.get(j), Integer.toString(j + 1));
-                System.out.println("code = " + code);
+                leadingCode = leadingCode.replaceAll(numberList.get(j), Integer.toString(j + 1));
             }
+            for (int j = numberList.size() - 1; j >= 0 ; j--) {
+                endingCode = endingCode.replaceAll(numberList.get(j), Integer.toString(j + 1));
+            }
+            for (int k = 0; k < leadingCode.length(); k++) {
+                if (Character.isDigit(leadingCode.charAt(k))) {
+                    firstDigit = String.valueOf(leadingCode.charAt(k));
+                    break;
+                }
+            }
+            for (int l = endingCode.length() - 1; l >= 0; l--) {
+                if (Character.isDigit(endingCode.charAt(l))) {
+                    lastDigit = String.valueOf(endingCode.charAt(l));
+                    break;
+                }
+            }
+            String total = String.valueOf(firstDigit) + String.valueOf(lastDigit);
+            sum += Integer.parseInt(total);
         }
+        System.out.println("sum = " + sum);
     }
 
     private static ArrayList<String> getNumberList() {

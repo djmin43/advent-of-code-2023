@@ -9,5 +9,3 @@ X
 -src/main/java/org/example/day1/day1-input.txt,2/f/2f674c4d120e2c063b496b50d1cb55bee451439e
 \
 ,src/test/java/org/example/day1/Day1Test.java,a/a/aa97bef8883fd2d56fe84719f00c0724f3a6baf3
-^
-.src/test/java/org/example/day1/Day1Test11.java,a/2/a222c9e6faaa24db1a7ff7130ffe71725efadc9d
