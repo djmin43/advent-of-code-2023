@@ -1,6 +1,7 @@
 
 g
-java:S2095X"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8’õÔÏÃ1
-L	java:S106/"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8šõÔÏÃ1
-L	java:S106P"+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8¤¿ÛÏÃ1
-L	java:S106]"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8æİÏÃ1
+java:S2095O"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8áöá÷Ã1
+L	java:S106"+Replace this use of System.out by a logger.(­áêüúÿÿÿÿ8äöá÷Ã1
+L	java:S106&"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8çöá÷Ã1
+L	java:S106G"+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8éöá÷Ã1
+L	java:S106T"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8è¯æ÷Ã1

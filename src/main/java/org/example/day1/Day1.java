@@ -13,35 +13,26 @@ public class Day1 {
         partTwo(inputList);
     }
 
+
+
     private static void partTwo(ArrayList<String> inputList) {
 
         int sum = 0;
         ArrayList<String> numberList = getNumberList();
         for (int i = 0; i < inputList.size(); i++) {
             String code = inputList.get(i);
-            String leadingCode = code;
-            String endingCode = code;
-            String firstDigit = "";
-            String lastDigit = "";
+            ArrayList<Character> charList = new ArrayList<>();
             for (int j = 0; j < numberList.size(); j++) {
-                leadingCode = leadingCode.replaceAll(numberList.get(j), Integer.toString(j + 1));
+                System.out.println("before code = " + code);
+                String leadingString = Character.toString(numberList.get(j).charAt(0));
+                String endingString = Character.toString(numberList.get(j).charAt(numberList.get(j).length() - 1));
+                code = code.replaceAll(numberList.get(j), leadingString +Integer.toString(j + 1) + endingString);
             }
-            for (int j = numberList.size() - 1; j >= 0 ; j--) {
-                endingCode = endingCode.replaceAll(numberList.get(j), Integer.toString(j + 1));
+            for (int j = 0; j < code.length(); j++) {
+                if (Character.isDigit(code.charAt(j)))
+                    charList.add(code.charAt(j));
             }
-            for (int k = 0; k < leadingCode.length(); k++) {
-                if (Character.isDigit(leadingCode.charAt(k))) {
-                    firstDigit = String.valueOf(leadingCode.charAt(k));
-                    break;
-                }
-            }
-            for (int l = endingCode.length() - 1; l >= 0; l--) {
-                if (Character.isDigit(endingCode.charAt(l))) {
-                    lastDigit = String.valueOf(endingCode.charAt(l));
-                    break;
-                }
-            }
-            String total = String.valueOf(firstDigit) + String.valueOf(lastDigit);
+            String total = String.valueOf(charList.get(0)) + String.valueOf(charList.get(charList.size() - 1));
             sum += Integer.parseInt(total);
         }
         System.out.println("sum = " + sum);
