@@ -9,23 +9,18 @@ public class Day1 {
     public static void main(String[] args) {
         ArrayList<String> inputList = InputUtil.readInput(1);
         int partOneAnswer = partOne(inputList);
-        System.out.println("partOneAnswer = " + partOneAnswer);
         int partTwoAnswer = partTwo(inputList);
-        System.out.println("partTwoAnswer = " + partTwoAnswer);
 
+        System.out.println("partOneAnswer = " + partOneAnswer);
+        System.out.println("partTwoAnswer = " + partTwoAnswer);
     }
 
     protected static int partTwo(ArrayList<String> inputList) {
         int sum = 0;
-        ArrayList<String> numberList = getNumberList();
         for (int i = 0; i < inputList.size(); i++) {
             String code = inputList.get(i);
-            for (int j = 0; j < numberList.size(); j++) {
-                String leadingString = Character.toString(numberList.get(j).charAt(0));
-                String endingString = Character.toString(numberList.get(j).charAt(numberList.get(j).length() - 1));
-                code = code.replaceAll(numberList.get(j), leadingString +Integer.toString(j + 1) + endingString);
-            }
-            int total = getCodeTotal(code);
+            String parsedCode = parseCode(code);
+            int total = getCodeTotal(parsedCode);
             sum += total;
         }
         return sum;
@@ -49,6 +44,16 @@ public class Day1 {
         }
         String total = String.valueOf(charList.get(0)) + String.valueOf(charList.get(charList.size() - 1));
         return  Integer.parseInt(total);
+    }
+
+    protected static String parseCode(String code) {
+        ArrayList<String> numberList = getNumberList();
+        for (int j = 0; j < numberList.size(); j++) {
+            String leadingString = Character.toString(numberList.get(j).charAt(0));
+            String endingString = Character.toString(numberList.get(j).charAt(numberList.get(j).length() - 1));
+            code = code.replaceAll(numberList.get(j), leadingString +Integer.toString(j + 1) + endingString);
+        }
+        return code;
     }
 
     private static ArrayList<String> getNumberList() {
