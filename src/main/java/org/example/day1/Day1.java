@@ -15,22 +15,22 @@ public class Day1 {
         System.out.println("partTwoAnswer = " + partTwoAnswer);
     }
 
+    protected static int partOne(ArrayList<String> inputList) {
+        int sum = 0;
+        for (int i = 0; i < inputList.size(); i++) {
+            String code = inputList.get(i);
+            int total = getCodeTotal(code);
+            sum += total;
+        }
+        return sum;
+    }
+
     protected static int partTwo(ArrayList<String> inputList) {
         int sum = 0;
         for (int i = 0; i < inputList.size(); i++) {
             String code = inputList.get(i);
             String parsedCode = parseCode(code);
             int total = getCodeTotal(parsedCode);
-            sum += total;
-        }
-        return sum;
-    }
-
-    protected static int partOne(ArrayList<String> inputList) {
-        int sum = 0;
-        for (int i = 0; i < inputList.size(); i++) {
-            String code = inputList.get(i);
-            int total = getCodeTotal(code);
             sum += total;
         }
         return sum;
