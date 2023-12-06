@@ -12,9 +12,6 @@ public class Day1 {
         partOne(inputList);
         partTwo(inputList);
     }
-
-
-
     private static void partTwo(ArrayList<String> inputList) {
 
         int sum = 0;
@@ -23,7 +20,6 @@ public class Day1 {
             String code = inputList.get(i);
             ArrayList<Character> charList = new ArrayList<>();
             for (int j = 0; j < numberList.size(); j++) {
-                System.out.println("before code = " + code);
                 String leadingString = Character.toString(numberList.get(j).charAt(0));
                 String endingString = Character.toString(numberList.get(j).charAt(numberList.get(j).length() - 1));
                 code = code.replaceAll(numberList.get(j), leadingString +Integer.toString(j + 1) + endingString);
@@ -50,7 +46,6 @@ public class Day1 {
         numberList.add("eight");
         numberList.add("nine");
         return numberList;
-
     }
 
     private static void partOne(ArrayList<String> inputList) {
