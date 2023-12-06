@@ -8,14 +8,14 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class Day1Test {
+public class TrebuchetTest {
 
     @Test
-    @DisplayName("test part One")
+    @DisplayName("test part one result")
     public void testPartOne() {
         ArrayList<String> inputList = InputUtil.readInput(1);
-        Day1 day1 = new Day1();
-        int answer = day1.partOne(inputList);
+        Trebuchet trebuchet = new Trebuchet();
+        int answer = trebuchet.partOne(inputList);
         int expected = 54632;
         assertEquals(answer, expected);
     }

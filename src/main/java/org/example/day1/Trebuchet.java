@@ -4,7 +4,7 @@ import org.example.utils.InputUtil;
 
 import java.util.ArrayList;
 
-public class Day1 {
+public class Trebuchet {
 
     public static void main(String[] args) {
         ArrayList<String> inputList = InputUtil.readInput(1);
