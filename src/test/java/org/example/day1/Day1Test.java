@@ -19,7 +19,4 @@ public class Day1Test {
         int expected = 54632;
         assertEquals(answer, expected);
     }
-
-//    part one 54632
-//    part two 54019
 }
