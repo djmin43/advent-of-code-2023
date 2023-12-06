@@ -1,0 +1,9 @@
+
+
+java:S1319
+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(µŠ€8Ò¦«øÃ1
+g
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8÷‰«øÃ1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ë¤‡íúÿÿÿÿ8ù‰«øÃ1
+L	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8ü‰«øÃ1

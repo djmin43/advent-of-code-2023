@@ -9,3 +9,9 @@ X
 -src/main/java/org/example/day1/day1-input.txt,2/f/2f674c4d120e2c063b496b50d1cb55bee451439e
 \
 ,src/test/java/org/example/day1/Day1Test.java,a/a/aa97bef8883fd2d56fe84719f00c0724f3a6baf3
+a
+1src/main/java/org/example/day2/CubeConundrum.java,0/0/00a79252bc91451365ca25597158880af928b760
+Q
+!src/main/resources/day1-input.txt,7/4/74e45e294383750f9b556df4228edce3500719c1
+^
+.src/main/java/org/example/utils/InputUtil.java,6/1/61471f10622330e8e763e5cd62c490a2d23be0cc

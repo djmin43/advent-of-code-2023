@@ -1,6 +1,9 @@
 
-g
-java:S2095J"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šÏ¯øÿÿÿÿ8áöá÷Ã1
-L	java:S106""+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8çöá÷Ã1
-L	java:S106B"+Replace this use of System.out by a logger.(¨Á•Ìùÿÿÿÿ8éöá÷Ã1
-L	java:S106O"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8è¯æ÷Ã1
+L	java:S106&"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8£ÉÒøÃ1
+L	java:S1067"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8›ÑŞøÃ1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8¥ÉÒøÃ1
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8¥ÉÒøÃ1
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8¥ÉÒøÃ1
